@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ---------- nav bar --------- -->
+
+    <nav class="navbar">
+        <div class="left-nav">
+            <div class="hamburger-menu">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+
+            <a class="logo" href="#"><i class="fa-brands fa-github"></i></a>
+
+            <a class="dashboard-button" href="#">Dashboard</a>
+        </div>    
+
+        <div class="right-nav">
+           <button class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Type <kbd>/</kbd> to search</span>
+           </button>
+           
+           <div class="right-nav-menu">
+
+                <button>
+                    <i class="fa-solid fa-plus"></i>
+                    <span>
+                        <i class="fa-solid fa-sort-down"></i>
+                    </span>
+                    <span class="tooltip">Create new...</span>
+                </button>
+
+                <a class="issues-link" href="#">
+                    <i class="fa-regular fa-circle-dot"></i>
+                    <span>Issues</span>
+                </a>
+
+                <a class="pull-requests-link" href="#">
+                    <i class="fa-solid fa-code-pull-request"></i>
+                    <span>Pull requests</span>
+                </a>
+
+                <a class="notifications-link" href="#">
+                    <i class="fa-solid fa-inbox"></i>
+                    <span>You have no unread notifications</span>
+                </a>
+
+                <a class="profile-link"></a>
+                
+           </div>
+        </div> <!-- C'est ce div qui manquait -->
+    </nav>
+
+    <!-- ---------- nav bar --------- -->
+
+    <!-- ---------- main part --------- -->
+
+    <div class="container">
+    
+        <h3 class="title-small-screen">Repositories</h3>
+
+        <div class="top-repositories">
+            <div>
+                <b id="repositories-title">Top repositories</b>
+                <a href="#"><i class="fa-solid fa-book"></i> New </a>
+            </div>
+
+            <input type="text" placeholder="Find a repository...">
+
+            <ul>
+                <li><a href="#">otmar-rb/otmar-rb</a></li>
+                <li><a href="#">otmar-rb/potfolio-website-clone</a></li>
+                <li><a href="#">otmar-rb/todoList_Javascript</a></li>
+                <li><a href="#">otmar-rb/Jeu-Chaud-Froid-Python</a></li>
+                <li><a href="#">otmar-rb/_</a></li>
+            </ul>
+
+        </div>
+
+        <div class="home-page">
+
+            <div class="main-homepage">
+
+                <div class="home-title-row">
+                    <h1>Home</h1>
+                    <div>
+                        <a class="home-feed-blue-link" href="#">Send feedback</a>
+                        <button>
+                            <i class="fa-solid fa-filter"></i>
+                            Filter
+                        </button>
+                        <button id="explore">
+                            <i class="fa-brands fa-wpexplorer"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ----------trading-tools----------- -->
+
+                <div class="main-feed-section trading-tools">
+                    
+                    <div class="section-description trading-tools-description">
+
+                        <div class="title">
+                            <i class="fa-solid fa-wrench"></i>
+                            <h3>Use tools of the trade</h3>
+                        </div>
+    
+                        <button class="dots-why">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+    
+                    <div class="section-cards">
+                        <div class="card">
+                            <h3>
+                                Simplify your development workflow with a GUI
+                            </h3>
+
+                            <div class="description">
+                                <img src="https://github.githubassets.com/assets/gh-desktop-7c9388a38509.png" alt="GitHub Desktop" class="d-block width-full mt-1">
+                                <p>
+                                    <a class="home-feed-blue-link">
+                                        Install GitHub Desktop        
+                                    </a>
+                                    to visualize, commit, and push changes without ever touching the command line.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+                            <h3>Get AI-based coding suggestions
+                            </h3>
+
+                            <div class="description copilot">
+                                <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-copilot mb-3">
+                                    <path d="M23.922 16.992c-.861 1.495-5.859 5.023-11.922 5.023-6.063 0-11.061-3.528-11.922-5.023A.641.641 0 0 1 0 16.736v-2.869a.841.841 0 0 1 .053-.22c.372-.935 1.347-2.292 2.605-2.656.167-.429.414-1.055.644-1.517a10.195 10.195 0 0 1-.052-1.086c0-1.331.282-2.499 1.132-3.368.397-.406.89-.717 1.474-.952 1.399-1.136 3.392-2.093 6.122-2.093 2.731 0 4.767.957 6.166 2.093.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086.23.462.477 1.088.644 1.517 1.258.364 2.233 1.721 2.605 2.656a.832.832 0 0 1 .053.22v2.869a.641.641 0 0 1-.078.256ZM12.172 11h-.344a4.323 4.323 0 0 1-.355.508C10.703 12.455 9.555 13 7.965 13c-1.725 0-2.989-.359-3.782-1.259a2.005 2.005 0 0 1-.085-.104L4 11.741v6.585c1.435.779 4.514 2.179 8 2.179 3.486 0 6.565-1.4 8-2.179v-6.585l-.098-.104s-.033.045-.085.104c-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.545-3.508-1.492a4.323 4.323 0 0 1-.355-.508h-.016.016Zm.641-2.935c.136 1.057.403 1.913.878 2.497.442.544 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.15.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.319-.862-2.824-1.025-1.487-.161-2.192.138-2.533.529-.269.307-.437.808-.438 1.578v.021c0 .265.021.562.063.893Zm-1.626 0c.042-.331.063-.628.063-.894v-.02c-.001-.77-.169-1.271-.438-1.578-.341-.391-1.046-.69-2.533-.529-1.505.163-2.347.537-2.824 1.025-.462.472-.705 1.179-.705 2.319 0 1.211.175 1.926.558 2.361.365.414 1.084.751 2.657.751 1.21 0 1.902-.394 2.344-.938.475-.584.742-1.44.878-2.497Z"></path><path d="M14.5 14.25a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1Zm-5 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1Z"></path>
+                                </svg>
+                                <p>
+                                    <a class="home-feed-blue-link">Try GitHub Copilot free for 30 days,
+                                    </a>
+                                    which suggests entire functions in real time, right from your editor.
+                                </p>
+                            </div>
+
+                        </div>
+                               
+                    </div>
+
+                </div>
+                <!-- -----------get started----------- -->
+
+
+                <div class="main-feed-section get-started">
+                
+                    <div class="section-description get-started-description">
+                        <div class="title">
+    
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>Get started on GitHub</h3>
+    
+                        </div>
+    
+                        <button class="dots-why">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                        
+                    </div>
+
+                    <div class="section-cards">
+
+                        <a class="card video-link" href="#">
+                            <div>
+                                <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-play color-fg-on-emphasis d-block">
+                                    <path d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z"></path><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5Z"></path>
+                                </svg>
+                            </div>
+                            
+                            <span>
+                                What is Github ?
+                            </span>
+
+                        </a>
+
+                        <div class="card second-card">
+                            <i class="fa-solid fa-code-pull-request"></i>
+                            
+                            <h3>
+                                Follow this exercise to try the GitHub flow
+                            </h3>
+
+                            <p>GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and learn GitHub's pull request workflow for creating and reviewing code.
+                            </p>
+
+                            <a href="#">Try the Github flow</a>
+
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+
+
+                <div class="posts">
+
+                    <div class="post-card">
+                        <div class="post-profile-wraper">
+
+                            <div class="post-profile">
+
+                                <div class="profile-img">
+                                    <a href="#">
+                                        <img src="images/gojo.webp">
+                                    </a>
+                                </div>
+
+                                <div class="user-infos">
+
+                                    <a href="#">gojo-satoru</a><span>starred a repository</span>
+
+                                    <small>2 days ago</small>
+
+                                </div>
+                            
+                            </div>
+
+                            <i class="fa-solid fa-ellipsis"></i>
+                            
+                        </div>
+                        
+                        <div class="post">
+                            <div class="post-name">
+                                <img src="images/hollow.webp">
+                                <a>hollowPurpleGPT</a>
+                            </div>
+
+                            <p>
+                                HollowPurpleGPT est une IA open-source révolutionnaire développée par Gojo Satoru lui-même, inspirée par son célèbre pouvoir "Hollow Purple". Elle combine puissance, rapidité...
+                            </p>
+
+                            <div class="star-button">
+                                <button class="primary-button">
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>Star</span>
+                                </button>
+
+                                <button class="dropdown">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </button>
+                            </div>
+
+                            <div class="stats">
+                                <div class="langage">
+                                    Python
+                                </div>
+
+                                <div class="stars">
+                                    <i class="fa-regular fa-star"></i>
+                                    <a href="#">110k</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-card">
+                        <div class="post-profile-wraper">
+
+                            <div class="post-profile">
+
+                                <div class="profile-img">
+                                    <a href="#">
+                                        <img src="images/gojo.webp">
+                                    </a>
+                                </div>
+
+                                <div class="user-infos">
+
+                                    <a href="#">gojo-satoru</a><span>starred a repository</span>
+
+                                    <small>2 days ago</small>
+
+                                </div>
+                            
+                            </div>
+
+                            <i class="fa-solid fa-ellipsis"></i>
+                            
+                        </div>
+                        
+                        <div class="post">
+                            <div class="post-name">
+                                <img src="images/hollow.webp">
+                                <a>hollowPurpleGPT</a>
+                            </div>
+
+                            <p>
+                                HollowPurpleGPT est une IA open-source révolutionnaire développée par Gojo Satoru lui-même, inspirée par son célèbre pouvoir "Hollow Purple". Elle combine puissance, rapidité...
+                            </p>
+
+                            <div class="star-button">
+                                <button class="primary-button">
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>Star</span>
+                                </button>
+
+                                <button class="dropdown">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </button>
+                            </div>
+
+                            <div class="stats">
+                                <div class="langage">
+                                    Python
+                                </div>
+
+                                <div class="stars">
+                                    <i class="fa-regular fa-star"></i>
+                                    <a href="#">12k</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-card">
+                        <div class="post-profile-wraper">
+
+                            <div class="post-profile">
+
+                                <div class="profile-img">
+                                    <a href="#">
+                                        <img src="images/gojo.webp">
+                                    </a>
+                                </div>
+
+                                <div class="user-infos">
+
+                                    <a href="#">gojo-satoru</a><span>starred a repository</span>
+
+                                    <small>2 days ago</small>
+
+                                </div>
+                            
+                            </div>
+
+                            <i class="fa-solid fa-ellipsis"></i>
+                            
+                        </div>
+                        
+                        <div class="post">
+                            <div class="post-name">
+                                <img src="images/hollow.webp">
+                                <a>hollowPurpleGPT</a>
+                            </div>
+
+                            <p>
+                                HollowPurpleGPT est une IA open-source révolutionnaire développée par Gojo Satoru lui-même, inspirée par son célèbre pouvoir "Hollow Purple". Elle combine puissance, rapidité...
+                            </p>
+
+                            <div class="star-button">
+                                <button class="primary-button">
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>Star</span>
+                                </button>
+
+                                <button class="dropdown">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </button>
+                            </div>
+
+                            <div class="stats">
+                                <div class="langage">
+                                    Python
+                                </div>
+
+                                <div class="stars">
+                                    <i class="fa-regular fa-star"></i>
+                                    <a href="#">300k</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        
+            <div class="ads">
+        
+                <div class="github-models">
+                    <span class="x-mark"><i class="fa-solid fa-xmark"></i></span>
+                    <div class="ad-title">
+                        <i class="fa-brands fa-github"></i>
+                        <h1>Github Models</h1>
+                    </div>
+                    <h3 class="ad-sub-title">Join the Linited Public Beta</h3>
+                    <p class="ad-description">Try, test, and deploy a range of popular AI models with an interactive playground, for free, right on GitHub.
+                    </p>
+                    <a class="ad-redirect-link" href="#">Learn more</a>
+
+                </div>
+
+                <div class="universe">
+                    <span class="x-mark"><i class="fa-solid fa-xmark"></i></span>
+                    <h1>
+                        UNIVERSE <span>'24</span>
+                    </h1>
+
+                    <h3 class="ad-sub-title" >Check out our full schedule of AI, DevEx, and security sessions.</h3>
+
+                    <p class="ad-description">Get tickets now to our global developer event on Oct. 29-30.
+                    </p>
+
+                    <a class="ad-redirect-link" href="#">Get tickets</a>
+                    
+                    <img src="images/ad-sublime-image.webp">
+                </div>
+
+                <div class="changelog">
+                    <h4>Latest changes</h4>
+                    
+                    <div class="late-event">
+                        <p class="late-event-day">Yesterday</p>
+
+                        <a class="event-link" href="#">
+                            Notice of upcoming deprecations and changes in GitHub Actions services
+                        </a>
+                    </div>
+
+                    <div class="late-event">
+                        <p class="late-event-day">Yesterday</p>
+
+                        <a class="event-link" href="#">
+                            CSV exports for the CodeQL pull request alerts report
+                        </a>
+                    </div>
+
+                    <div class="late-event">
+                        <p class="late-event-day">Yesterday</p>
+
+                        <a class="event-link" href="#">
+                            What’s New in Mobile, September Update
+                        </a>
+                    </div>
+
+                    <div class="late-event">
+                        <p class="late-event-day">4 days ago</p>
+
+                        <a class="event-link" href="#">
+                            GitHub security advisories support CVSS 4.0
+                        </a>
+                    </div>
+
+                    <a class="view-changelog" href="#">View changelog &rarr;</a>
+                </div>
+
+                <div class="exploration">
+                    <h3>Explore repositories</h3>
+
+                    <div class="repository">
+
+                        <div class="name">
+                            <img src="images/I’m Otm.png" alt="">
+                            <a>otmar <span>/</span> otmar-rb</a>
+                            <button><i class="fa-regular fa-star"></i></button>
+                        </div>
+
+                       <h4>Brand new TTS solution
+                       </h4>
+
+                       <div class="stats">
+
+                        <div class="stars">
+                            <i class="fa-regular fa-star"></i>
+                            <a href="#">12k</a>
+                        </div>
+
+                        <div class="langage">
+                            Python
+                        </div>
+
+                    </div>
+                        
+                    </div>
+
+                    <div class="repository">
+
+                        <div class="name">
+                            <img src="images/I’m Otm.png" alt="">
+                            <a>otmar <span>/</span> otmar-rb</a>
+                            <button><i class="fa-regular fa-star"></i></button>
+                        </div>
+
+                       <h4>vits2 backbone with multilingual-bert
+                       </h4>
+
+                       <div class="stats">
+
+                        <div class="stars">
+                            <i class="fa-regular fa-star"></i>
+                            <a href="#">12k</a>
+                        </div>
+
+                        <div class="langage">
+                            Python
+                        </div>
+
+                    </div>
+                        
+                    </div>
+
+                    <div class="repository">
+
+                        <div class="name">
+                            <img src="images/I’m Otm.png" alt="">
+                            <a>otmar <span>/</span> otmar-rb</a>
+                            <button><i class="fa-regular fa-star"></i></button>
+                        </div>
+
+                       <h4>Efficient implementations of state-of-the-art linear attention models in Pytorch and Triton
+                       </h4>
+
+                       <div class="stats">
+
+                        <div class="stars">
+                            <i class="fa-regular fa-star"></i>
+                            <a href="#">12k</a>
+                        </div>
+
+                        <div class="langage">
+                            Python
+                        </div>
+
+                    </div>
+                        
+                    </div>
+
+                    <a class="home-feed-blue-link" href=""#>Explore more &rarr;</a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a5708e51aa.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

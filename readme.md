@@ -28,20 +28,12 @@ Pour exécuter ce projet localement, suivez ces étapes :
 
 1. **Cloner le dépôt** :
     ```bash
-    git clone https://github.com/votre-utilisateur/nom-du-repository.git
+    git clone https://github.com/otmar-rb/github-home_frontend-clone
     ```
-2. **Naviguer dans le répertoire du projet** :
-    ```bash
-    cd nom-du-repository
-    ```
-3. **Ouvrir `index.html` dans un navigateur** :
+2. **Ouvrir `index.html` dans un navigateur** :
     Vous pouvez double-cliquer sur le fichier `index.html` ou l'ouvrir avec un serveur local (par exemple, dans un éditeur de code comme VSCode).
 
 ## Design Réactif
 
 Ce projet est conçu pour s'adapter à différentes tailles d'écrans. La barre de navigation se transforme en menu hamburger sur les petits écrans et des ajustements de mise en page sont effectués pour les appareils mobiles.
-
-## Licence
-
-Ce projet est sous licence MIT.
 
